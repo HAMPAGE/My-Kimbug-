@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.02em;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1f2d3d;
+  line-height: 1.4545454545;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #7d858f;
+  line-height: 1.5;
+}
+
+strong {
+  font-size: 22px;
+  color: #2860e1;
+  line-height: 1.0909090909;
+}
+
+strong span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #525d69;
+  line-height: 1.5;
+}
+
+button {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+
+#prev {
+  background-image: url(./assets/icon-backward.svg);
+}
+
+#next {
+  background-image: url(./assets/icon-forward.svg);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.card {
+  position: relative;
+  width: 400px;
+  height: 354px;
+}
+
+.card-carousel img {
+  position: absolute;
+  top: -30px;
+  left: -7px;
+  /**display: block;**/
+  width: 407px;
+  height: 270px;
+}
+
+.card-content {
+  position: absolute;
+  top: 240px;
+  width: 400px;
+  height: 114px;
+  background-color: #FFFFFF;
+}
+
+.card-content h1 {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+.Kimbugtravel {
+  position: absolute;
+  top: 46px;
+  left: 16px;
+}
+
+strong {
+  position: absolute;
+  top: 78px;
+  left: 252px;
+}
+
+#prev {
+  position: absolute;
+  top: 108.45px;
+  left: 7.19px;
+}
+
+#next {
+  position: absolute;
+  top: 108.45px;
+  right:11.19px;
+}
