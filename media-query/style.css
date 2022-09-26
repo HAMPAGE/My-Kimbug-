@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing {
+  background-image: url("./assets/img-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.landing-title {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.landing-title strong {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.landing-link {
+  line-height: 1;
+  color: #fff;
+}
+
+.banner-title a {
+  color: #1f2d3d;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+/*실패*/
+
+.banner,
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  position: fixed;
+  top: 0px;
+  left: opx;
+
+  width: 1440px;
+  height: 80px;
+  background-color: #FFC82C;
+}
+
+.landing {
+  width: 1440px;
+  height: 900px;
+}
+
+.landing-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+.landing-link {
+  height: 56px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  padding: 16px 39px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {  
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0px;
+    left: opx;
+    
+    width: 375px;
+    height: 64px;
+    background-color: #FFC82C;
+  }
+  
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+
+    width: 375px;
+    height: 667px;
+  }
+  
+  .landing-title {
+      text-align: right;
+      font-size: 32px;
+      font-weight: 700;
+  }
+  
+  .landing-link {
+    height: 52px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 16px 39px;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+  
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
