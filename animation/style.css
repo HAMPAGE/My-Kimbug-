@@ -1,0 +1,64 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-title {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.333333333333333;
+    color: #151B26;
+    animation: loading-font 250ms ease-in 0 infinite alternate;
+}
+
+.progress-bar,
+.progress-bar-gauge {
+    border-radius: 100px;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 12px;
+    background-color: #E5EAEF;
+}
+
+.progress-bar-gauge {
+    display: block;
+    height: 100%;
+    background-color: #13CE66;
+    animation: ani-loading-bar-gauge 250ms ease-in 0 infinite;
+}
+
+@keyframes loading-font {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes ani-loading-bar-gauge {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
